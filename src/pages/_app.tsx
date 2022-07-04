@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { FiSettings } from 'react-icons/fi'
 
 import { Navbar, Sidebar } from '@components/index'
-import { TooltipComponent, Position } from '@syncfusion/ej2-react-popups'
+import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 
 import '@/styles/global.css'
 import '@/styles/styles.css'

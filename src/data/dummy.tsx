@@ -548,6 +548,7 @@ export const links = [
 			{
 				name: 'ecommerce',
 				icon: <FiShoppingBag />,
+				href: '',
 			},
 		],
 	},
@@ -558,14 +559,17 @@ export const links = [
 			{
 				name: 'orders',
 				icon: <AiOutlineShoppingCart />,
+				href: 'orders',
 			},
 			{
 				name: 'employees',
 				icon: <IoMdContacts />,
+				href: 'employees',
 			},
 			{
 				name: 'customers',
 				icon: <RiContactsLine />,
+				href: 'customers',
 			},
 		],
 	},
@@ -575,18 +579,22 @@ export const links = [
 			{
 				name: 'calendar',
 				icon: <AiOutlineCalendar />,
+				href: 'calendar',
 			},
 			{
 				name: 'kanban',
 				icon: <BsKanban />,
+				href: 'kanban',
 			},
 			{
 				name: 'editor',
 				icon: <FiEdit />,
+				href: 'editor',
 			},
 			{
 				name: 'color-picker',
 				icon: <BiColorFill />,
+				href: 'color-picker',
 			},
 		],
 	},
@@ -596,35 +604,43 @@ export const links = [
 			{
 				name: 'line',
 				icon: <AiOutlineStock />,
+				href: 'charts/line',
 			},
 			{
 				name: 'area',
 				icon: <AiOutlineAreaChart />,
+				href: 'charts/area',
 			},
 
 			{
 				name: 'bar',
 				icon: <AiOutlineBarChart />,
+				href: 'charts/bar',
 			},
 			{
 				name: 'pie',
 				icon: <FiPieChart />,
+				href: 'charts/pie',
 			},
 			{
 				name: 'financial',
 				icon: <RiStockLine />,
+				href: 'charts/financial',
 			},
 			{
 				name: 'color-mapping',
 				icon: <BsBarChart />,
+				href: 'charts/color-mapping',
 			},
 			{
 				name: 'pyramid',
 				icon: <GiLouvrePyramid />,
+				href: 'charts/pyramid',
 			},
 			{
 				name: 'stacked',
 				icon: <AiOutlineBarChart />,
+				href: 'charts/stacked',
 			},
 		],
 	},
