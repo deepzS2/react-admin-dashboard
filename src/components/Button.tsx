@@ -3,12 +3,18 @@ import React from 'react'
 interface ButtonProps {
 	bgColor: string
 	color: string
-	size: string
+	size?: string
 	borderRadius: string
 	text: string
 }
 
-const Button = ({ bgColor, borderRadius, color, size, text }: ButtonProps) => {
+const Button = ({
+	bgColor,
+	borderRadius,
+	color,
+	size = 'sm',
+	text,
+}: ButtonProps) => {
 	return (
 		<button
 			type="button"
