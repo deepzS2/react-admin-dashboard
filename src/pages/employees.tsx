@@ -18,10 +18,11 @@ import {
 const GridComponent = dynamic<(GridModel & { id: string }) | GridTypecast>(() =>
 	import('@syncfusion/ej2-react-grids').then((res) => res.GridComponent)
 )
+
 const Employees: NextPage = () => {
 	return (
 		<div className="m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl">
-			<Header category="Page" title="Orders" />
+			<Header category="Page" title="Employees" />
 			<GridComponent
 				dataSource={employeesData}
 				allowPaging
