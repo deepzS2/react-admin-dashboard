@@ -32,6 +32,11 @@ import { MdOutlineSupervisorAccount } from 'react-icons/md'
 import { RiContactsLine, RiStockLine } from 'react-icons/ri'
 import { TiTick } from 'react-icons/ti'
 
+import {
+	ContextMenuItem,
+	ContextMenuItemModel,
+} from '@syncfusion/ej2-react-grids'
+
 import avatar from './avatar.jpg'
 import avatar2 from './avatar2.jpg'
 import avatar3 from './avatar3.png'
@@ -2093,7 +2098,7 @@ export const ordersData = [
 		Location: 'USA',
 		Status: 'pending',
 		StatusBg: '#FB9678',
-		ProductImage: product6,
+		ProductImage: product6.src,
 	},
 	{
 		OrderID: 345653,
@@ -2103,7 +2108,7 @@ export const ordersData = [
 		Location: 'Delhi',
 		Status: 'complete',
 		StatusBg: '#8BE78B',
-		ProductImage: product5,
+		ProductImage: product5.src,
 	},
 	{
 		OrderID: 390457,
@@ -2113,7 +2118,7 @@ export const ordersData = [
 		Location: 'New York',
 		Status: 'active',
 		StatusBg: '#03C9D7',
-		ProductImage: product7,
+		ProductImage: product7.src,
 	},
 	{
 		OrderID: 893486,
@@ -2123,7 +2128,7 @@ export const ordersData = [
 		Location: 'Germany',
 		Status: 'canceled',
 		StatusBg: '#FF5C8E',
-		ProductImage: product4,
+		ProductImage: product4.src,
 	},
 	{
 		OrderID: 748975,
@@ -2133,7 +2138,7 @@ export const ordersData = [
 		Location: 'Spain',
 		Status: 'rejected',
 		StatusBg: 'red',
-		ProductImage: product1,
+		ProductImage: product1.src,
 	},
 	{
 		OrderID: 94757,
@@ -2143,7 +2148,7 @@ export const ordersData = [
 		Location: 'USA',
 		Status: 'canceled',
 		StatusBg: '#FF5C8E',
-		ProductImage: product2,
+		ProductImage: product2.src,
 	},
 	{
 		OrderID: 944895,
@@ -2153,7 +2158,7 @@ export const ordersData = [
 		Location: 'USA',
 		Status: 'active',
 		StatusBg: '#03C9D7',
-		ProductImage: product3,
+		ProductImage: product3.src,
 	},
 	{
 		OrderID: 845954,
@@ -2163,7 +2168,7 @@ export const ordersData = [
 		Location: 'USA',
 		Status: 'complete',
 		StatusBg: '#8BE78B',
-		ProductImage: product4,
+		ProductImage: product4.src,
 	},
 	{
 		OrderID: 845954,
@@ -2229,7 +2234,7 @@ export const ordersData = [
 		Location: 'USA',
 		Status: 'pending',
 		StatusBg: '#FB9678',
-		ProductImage: product6,
+		ProductImage: product6.src,
 	},
 	{
 		OrderID: 345653,
@@ -2239,7 +2244,7 @@ export const ordersData = [
 		Location: 'Delhi',
 		Status: 'complete',
 		StatusBg: '#8BE78B',
-		ProductImage: product5,
+		ProductImage: product5.src,
 	},
 	{
 		OrderID: 390457,
@@ -2249,7 +2254,7 @@ export const ordersData = [
 		Location: 'New York',
 		Status: 'active',
 		StatusBg: '#03C9D7',
-		ProductImage: product7,
+		ProductImage: product7.src,
 	},
 	{
 		OrderID: 893486,
@@ -2259,7 +2264,7 @@ export const ordersData = [
 		Location: 'Germany',
 		Status: 'canceled',
 		StatusBg: '#FF5C8E',
-		ProductImage: product4,
+		ProductImage: product4.src,
 	},
 	{
 		OrderID: 748975,
@@ -2269,7 +2274,7 @@ export const ordersData = [
 		Location: 'Spain',
 		Status: 'rejected',
 		StatusBg: 'red',
-		ProductImage: product1,
+		ProductImage: product1.src,
 	},
 	{
 		OrderID: 94757,
@@ -2279,7 +2284,7 @@ export const ordersData = [
 		Location: 'USA',
 		Status: 'canceled',
 		StatusBg: '#FF5C8E',
-		ProductImage: product2,
+		ProductImage: product2.src,
 	},
 	{
 		OrderID: 944895,
@@ -2289,7 +2294,7 @@ export const ordersData = [
 		Location: 'USA',
 		Status: 'active',
 		StatusBg: '#03C9D7',
-		ProductImage: product3,
+		ProductImage: product3.src,
 	},
 	{
 		OrderID: 845954,
@@ -2299,7 +2304,7 @@ export const ordersData = [
 		Location: 'USA',
 		Status: 'complete',
 		StatusBg: '#8BE78B',
-		ProductImage: product4,
+		ProductImage: product4.src,
 	},
 	{
 		OrderID: 845954,
@@ -2365,7 +2370,7 @@ export const ordersData = [
 		Location: 'USA',
 		Status: 'pending',
 		StatusBg: '#FB9678',
-		ProductImage: product6,
+		ProductImage: product6.src,
 	},
 	{
 		OrderID: 345653,
@@ -2375,7 +2380,7 @@ export const ordersData = [
 		Location: 'Delhi',
 		Status: 'complete',
 		StatusBg: '#8BE78B',
-		ProductImage: product5,
+		ProductImage: product5.src,
 	},
 	{
 		OrderID: 390457,
@@ -2385,7 +2390,7 @@ export const ordersData = [
 		Location: 'New York',
 		Status: 'active',
 		StatusBg: '#03C9D7',
-		ProductImage: product7,
+		ProductImage: product7.src,
 	},
 	{
 		OrderID: 893486,
@@ -2395,7 +2400,7 @@ export const ordersData = [
 		Location: 'Germany',
 		Status: 'canceled',
 		StatusBg: '#FF5C8E',
-		ProductImage: product4,
+		ProductImage: product4.src,
 	},
 	{
 		OrderID: 748975,
@@ -2405,7 +2410,7 @@ export const ordersData = [
 		Location: 'Spain',
 		Status: 'rejected',
 		StatusBg: 'red',
-		ProductImage: product1,
+		ProductImage: product1.src,
 	},
 	{
 		OrderID: 94757,
@@ -2415,7 +2420,7 @@ export const ordersData = [
 		Location: 'USA',
 		Status: 'canceled',
 		StatusBg: '#FF5C8E',
-		ProductImage: product2,
+		ProductImage: product2.src,
 	},
 	{
 		OrderID: 944895,
@@ -2425,7 +2430,7 @@ export const ordersData = [
 		Location: 'USA',
 		Status: 'active',
 		StatusBg: '#03C9D7',
-		ProductImage: product3,
+		ProductImage: product3.src,
 	},
 	{
 		OrderID: 845954,
@@ -2435,7 +2440,7 @@ export const ordersData = [
 		Location: 'USA',
 		Status: 'complete',
 		StatusBg: '#8BE78B',
-		ProductImage: product4,
+		ProductImage: product4.src,
 	},
 	{
 		OrderID: 845954,
@@ -2501,7 +2506,7 @@ export const ordersData = [
 		Location: 'USA',
 		Status: 'pending',
 		StatusBg: '#FB9678',
-		ProductImage: product6,
+		ProductImage: product6.src,
 	},
 	{
 		OrderID: 345653,
@@ -2511,7 +2516,7 @@ export const ordersData = [
 		Location: 'Delhi',
 		Status: 'complete',
 		StatusBg: '#8BE78B',
-		ProductImage: product5,
+		ProductImage: product5.src,
 	},
 	{
 		OrderID: 390457,
@@ -2521,7 +2526,7 @@ export const ordersData = [
 		Location: 'New York',
 		Status: 'active',
 		StatusBg: '#03C9D7',
-		ProductImage: product7,
+		ProductImage: product7.src,
 	},
 	{
 		OrderID: 893486,
@@ -2531,7 +2536,7 @@ export const ordersData = [
 		Location: 'Germany',
 		Status: 'canceled',
 		StatusBg: '#FF5C8E',
-		ProductImage: product4,
+		ProductImage: product4.src,
 	},
 	{
 		OrderID: 748975,
@@ -2541,7 +2546,7 @@ export const ordersData = [
 		Location: 'Spain',
 		Status: 'rejected',
 		StatusBg: 'red',
-		ProductImage: product1,
+		ProductImage: product1.src,
 	},
 	{
 		OrderID: 94757,
@@ -2551,7 +2556,7 @@ export const ordersData = [
 		Location: 'USA',
 		Status: 'canceled',
 		StatusBg: '#FF5C8E',
-		ProductImage: product2,
+		ProductImage: product2.src,
 	},
 	{
 		OrderID: 944895,
@@ -2561,7 +2566,7 @@ export const ordersData = [
 		Location: 'USA',
 		Status: 'active',
 		StatusBg: '#03C9D7',
-		ProductImage: product3,
+		ProductImage: product3.src,
 	},
 	{
 		OrderID: 845954,
@@ -2571,7 +2576,7 @@ export const ordersData = [
 		Location: 'USA',
 		Status: 'complete',
 		StatusBg: '#8BE78B',
-		ProductImage: product4,
+		ProductImage: product4.src,
 	},
 	{
 		OrderID: 845954,
@@ -2637,7 +2642,7 @@ export const ordersData = [
 		Location: 'USA',
 		Status: 'pending',
 		StatusBg: '#FB9678',
-		ProductImage: product6,
+		ProductImage: product6.src,
 	},
 	{
 		OrderID: 345653,
@@ -2647,7 +2652,7 @@ export const ordersData = [
 		Location: 'Delhi',
 		Status: 'complete',
 		StatusBg: '#8BE78B',
-		ProductImage: product5,
+		ProductImage: product5.src,
 	},
 	{
 		OrderID: 390457,
@@ -2657,7 +2662,7 @@ export const ordersData = [
 		Location: 'New York',
 		Status: 'active',
 		StatusBg: '#03C9D7',
-		ProductImage: product7,
+		ProductImage: product7.src,
 	},
 	{
 		OrderID: 893486,
@@ -2667,7 +2672,7 @@ export const ordersData = [
 		Location: 'Germany',
 		Status: 'canceled',
 		StatusBg: '#FF5C8E',
-		ProductImage: product4,
+		ProductImage: product4.src,
 	},
 	{
 		OrderID: 748975,
@@ -2677,7 +2682,7 @@ export const ordersData = [
 		Location: 'Spain',
 		Status: 'rejected',
 		StatusBg: 'red',
-		ProductImage: product1,
+		ProductImage: product1.src,
 	},
 	{
 		OrderID: 94757,
@@ -2687,7 +2692,7 @@ export const ordersData = [
 		Location: 'USA',
 		Status: 'canceled',
 		StatusBg: '#FF5C8E',
-		ProductImage: product2,
+		ProductImage: product2.src,
 	},
 	{
 		OrderID: 944895,
@@ -2697,7 +2702,7 @@ export const ordersData = [
 		Location: 'USA',
 		Status: 'active',
 		StatusBg: '#03C9D7',
-		ProductImage: product3,
+		ProductImage: product3.src,
 	},
 	{
 		OrderID: 845954,
@@ -2707,7 +2712,7 @@ export const ordersData = [
 		Location: 'USA',
 		Status: 'complete',
 		StatusBg: '#8BE78B',
-		ProductImage: product4,
+		ProductImage: product4.src,
 	},
 	{
 		OrderID: 845954,
@@ -3055,7 +3060,7 @@ export const pieChartData = [
 	{ x: 'Insurance', y: 16, text: '16%' },
 ]
 
-export const contextMenuItems = [
+export const contextMenuItems: ContextMenuItem[] | ContextMenuItemModel[] = [
 	'AutoFit',
 	'AutoFitAll',
 	'SortAscending',
