@@ -7,14 +7,25 @@ interface NavLinkProps {
 	href: string
 	children: React.ReactNode
 	onClick: React.MouseEventHandler<HTMLAnchorElement>
+	style(isActive: boolean): React.CSSProperties
 }
 
-const NavLink = ({ className, href, children, onClick }: NavLinkProps) => {
+const NavLink = ({
+	className,
+	style,
+	href,
+	children,
+	onClick,
+}: NavLinkProps) => {
 	const { pathname } = useRouter()
 
 	return (
 		<Link passHref href={href}>
-			<a onClick={onClick} className={className(pathname === href)}>
+			<a
+				onClick={onClick}
+				className={className(pathname === href)}
+				style={style(pathname === href)}
+			>
 				{children}
 			</a>
 		</Link>

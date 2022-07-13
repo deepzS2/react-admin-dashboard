@@ -8,6 +8,8 @@ import { useStateContext } from '@contexts'
 import { earningData, SparklineAreaData, ecomPieChartData } from '../data/dummy'
 
 const Home: NextPage = () => {
+	const { currentColor } = useStateContext()
+
 	return (
 		<div className="mt-12">
 			<div className="flex flex-wrap lg:flex-nowrap justify-center">
@@ -21,7 +23,7 @@ const Home: NextPage = () => {
 					<div className="mt-6">
 						<Button
 							color="white"
-							bgColor="blue"
+							bgColor={currentColor}
 							text="Download"
 							borderRadius="10px"
 							size="md"
@@ -55,7 +57,7 @@ const Home: NextPage = () => {
 			</div>
 
 			<div className="flex gap-10 flex-wrap justify-center">
-				<div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 rounded-2xl md:w-780">
+				<div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780">
 					<div className="flex justify-between">
 						<p className="font-semibold text-xl">Revenue Updates</p>
 						<div className="flex items-center gap-4">
@@ -94,20 +96,20 @@ const Home: NextPage = () => {
 
 							<div className="mt-5">
 								<SparkLine
-									currentColor="blue"
+									currentColor={currentColor}
 									id="line-sparkline"
 									type="Line"
 									height="80px"
 									width="250px"
 									data={SparklineAreaData}
-									color="blue"
+									color={currentColor}
 								/>
 							</div>
 
 							<div className="mt-10">
 								<Button
 									color="white"
-									bgColor="blue"
+									bgColor={currentColor}
 									text="Download Report"
 									borderRadius="10px"
 								/>
