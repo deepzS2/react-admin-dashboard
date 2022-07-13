@@ -1,8 +1,8 @@
 import React from 'react'
 import { FiSettings } from 'react-icons/fi'
 
-import { Navbar, Sidebar } from '@components/index'
-import { useStateContext } from '@contexts/index'
+import { Navbar, Sidebar } from '@components'
+import { useStateContext } from '@contexts'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 
 interface LayoutProps {

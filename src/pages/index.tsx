@@ -2,8 +2,8 @@ import type { NextPage } from 'next'
 import { BsCurrencyDollar } from 'react-icons/bs'
 import { GoPrimitiveDot } from 'react-icons/go'
 
-import { Stacked, Pie, Button, SparkLine } from '@components/index'
-import { useStateContext } from '@contexts/index'
+import { Stacked, Pie, Button, SparkLine } from '@components'
+import { useStateContext } from '@contexts'
 
 import { earningData, SparklineAreaData, ecomPieChartData } from '../data/dummy'
 

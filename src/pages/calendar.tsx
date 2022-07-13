@@ -2,7 +2,7 @@ import { NextPage } from 'next'
 import React from 'react'
 
 import { scheduleData } from '@/data/dummy'
-import { Header } from '@components/index'
+import { Header } from '@components'
 import {
 	ScheduleComponent,
 	Day,

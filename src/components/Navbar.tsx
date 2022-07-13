@@ -7,7 +7,7 @@ import { MdKeyboardArrowDown } from 'react-icons/md'
 import { RiNotification3Line } from 'react-icons/ri'
 
 import avatar from '@/data/avatar.jpg'
-import { useStateContext } from '@contexts/index'
+import { useStateContext } from '@contexts'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 
 import { Cart, Chat, Notification, UserProfile } from '.'

@@ -4,7 +4,7 @@ import { MdOutlineCancel } from 'react-icons/md'
 import { SiShopware } from 'react-icons/si'
 
 import { links } from '@/data/dummy'
-import { useStateContext } from '@contexts/index'
+import { useStateContext } from '@contexts'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 
 import NavLink from './NavLink'

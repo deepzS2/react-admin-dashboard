@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic'
 import React from 'react'
 
 import { customersData, customersGrid } from '@/data/dummy'
-import { Header } from '@components/index'
+import { Header } from '@components'
 import {
 	ColumnsDirective,
 	ColumnDirective,
