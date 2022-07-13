@@ -32,6 +32,7 @@ import { MdOutlineSupervisorAccount } from 'react-icons/md'
 import { RiContactsLine, RiStockLine } from 'react-icons/ri'
 import { TiTick } from 'react-icons/ti'
 
+import { AxisModel } from '@syncfusion/ej2-react-charts'
 import {
 	ContextMenuItem,
 	ContextMenuItemModel,
@@ -201,7 +202,7 @@ const customerGridStatus = (props: CustomerGridStatusProps) => (
 	</div>
 )
 
-export const areaPrimaryXAxis = {
+export const areaPrimaryXAxis: AxisModel = {
 	valueType: 'DateTime',
 	labelFormat: 'y',
 	majorGridLines: { width: 0 },
@@ -210,7 +211,7 @@ export const areaPrimaryXAxis = {
 	labelStyle: { color: 'gray' },
 }
 
-export const areaPrimaryYAxis = {
+export const areaPrimaryYAxis: AxisModel = {
 	labelFormat: '{value}%',
 	lineStyle: { width: 0 },
 	maximum: 4,
@@ -219,12 +220,12 @@ export const areaPrimaryYAxis = {
 	minorTickLines: { width: 0 },
 	labelStyle: { color: 'gray' },
 }
-export const barPrimaryXAxis = {
+export const barPrimaryXAxis: AxisModel = {
 	valueType: 'Category',
 	interval: 1,
 	majorGridLines: { width: 0 },
 }
-export const barPrimaryYAxis = {
+export const barPrimaryYAxis: AxisModel = {
 	majorGridLines: { width: 0 },
 	majorTickLines: { width: 0 },
 	lineStyle: { width: 0 },
@@ -382,30 +383,35 @@ export const colorMappingData = [
 ]
 
 export const rangeColorMapping = [
-	{ label: '1°C to 10°C', start: '1', end: '10', colors: colorMappingData[1] },
+	{
+		label: '1°C to 10°C',
+		start: 1,
+		end: 10,
+		colors: colorMappingData[1] as string[],
+	},
 
 	{
 		label: '11°C to 20°C',
-		start: '11',
-		end: '20',
-		colors: colorMappingData[2],
+		start: 11,
+		end: 20,
+		colors: colorMappingData[2] as string[],
 	},
 
 	{
 		label: '21°C to 30°C',
-		start: '21',
-		end: '30',
-		colors: colorMappingData[3],
+		start: 21,
+		end: 30,
+		colors: colorMappingData[3] as string[],
 	},
 ]
 
-export const ColorMappingPrimaryXAxis = {
+export const ColorMappingPrimaryXAxis: AxisModel = {
 	valueType: 'Category',
 	majorGridLines: { width: 0 },
 	title: 'Months',
 }
 
-export const ColorMappingPrimaryYAxis = {
+export const ColorMappingPrimaryYAxis: AxisModel = {
 	lineStyle: { width: 0 },
 	majorTickLines: { width: 0 },
 	minorTickLines: { width: 0 },
@@ -413,7 +419,7 @@ export const ColorMappingPrimaryYAxis = {
 	title: 'Temperature',
 }
 
-export const FinancialPrimaryXAxis = {
+export const FinancialPrimaryXAxis: AxisModel = {
 	valueType: 'DateTime',
 	minimum: new Date('2016, 12, 31'),
 	maximum: new Date('2017, 9, 30'),
@@ -421,7 +427,7 @@ export const FinancialPrimaryXAxis = {
 	majorGridLines: { width: 0 },
 }
 
-export const FinancialPrimaryYAxis = {
+export const FinancialPrimaryYAxis: AxisModel = {
 	title: 'Price',
 	minimum: 100,
 	maximum: 180,
@@ -430,16 +436,16 @@ export const FinancialPrimaryYAxis = {
 	majorTickLines: { width: 0 },
 }
 
-export const LinePrimaryXAxis = {
+export const LinePrimaryXAxis: AxisModel = {
 	valueType: 'DateTime',
 	labelFormat: 'y',
 	intervalType: 'Years',
 	edgeLabelPlacement: 'Shift',
 	majorGridLines: { width: 0 },
-	background: 'white',
+	// background: 'white',
 }
 
-export const LinePrimaryYAxis = {
+export const LinePrimaryYAxis: AxisModel = {
 	labelFormat: '{value}%',
 	rangePadding: 'None',
 	minimum: 0,

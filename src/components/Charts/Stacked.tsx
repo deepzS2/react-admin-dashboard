@@ -17,8 +17,8 @@ import {
 } from '@syncfusion/ej2-react-charts'
 
 interface StackedProps {
-	width: string
-	height: string
+	width?: string
+	height?: string
 }
 
 const Stacked = ({ width, height }: StackedProps) => {
